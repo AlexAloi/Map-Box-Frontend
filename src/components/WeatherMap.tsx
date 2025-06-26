@@ -79,7 +79,6 @@ const WeatherMap: React.FC<WeatherStationMapProps> = ({
         e.stopPropagation();
         setSelectedStation(station);
       });
-      console.log(mapRef.current._markers);
       const marker = new mapboxgl.Marker({
         element: markerElement,
       })
